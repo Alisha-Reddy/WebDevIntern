@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        //Comparision
+        var a=10
+        console.log(10=="10") //boolean
+        console.log(10==="10") //the type is a string
+        //== checks the integer only whereas === checks the datatype too
+
+        //Array -> A variable can store same or different values
+        var a=[23,345,667,783,34]
+        var myarray=["Data","Task",5432465,46324.6523,true]
+        console.log(myarray[1])
+        //Index number -> printing individual data
+        for(i=1; i<=5; i++){
+            console.log("The assigned values are",i)
+        }
+        var num1= prompt("Enter the number")
+        console.log(num1)
+        for(i=1;i<=10;i++){
+            var result= num1 + "x" + i + "=" + (num1*i)
+            console.log(result)
+        }
+        //object -> It consists of key and the value
+        let myobject={
+            Brand:"HP",
+            Model:42e63,
+            Yearofmaking:2012,
+            Color:"Red"
+        }
+        console.log(myobject.Model)
+    </script>
+</body>
+</html>

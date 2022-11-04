@@ -1,0 +1,25 @@
+h2{
+    color:grey;
+    background-color:darkslategrey;
+    font-size: 66px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#myid{
+    color:blueviolet;
+    background-color:brown;
+    font-size: 76px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.myclass{
+    color:bisque;
+    background-color:chartreuse;
+    font-size:77px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.myclass1{
+    padding:20px;
+    margin:20px;
+    border-radius: 20px;
+    border-color:blueviolet;
+    border-style:inset;
+}

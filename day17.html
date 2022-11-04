@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: cornflowerblue;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            background-color: aqua;
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"><br><br>
+        <button onclick="background()">Click here</button>
+    </div>
+    <div id="circle"><br><br>
+        <button onclick="bg()">Click here</button>
+    </div>
+    <script>
+        function background(){
+            var r = Math.floor(Math.random()*255)
+            var g = Math.floor(Math.random()*255)
+            var b = Math.floor(Math.random()*255)
+            var mycolor="rgb("+r+","+g+","+b+")"
+            document.querySelector("#mydiv").style.background=mycolor;
+            console.log(mycolor)
+            //we can also use document.getElemtById
+            //document.body.style.background=mycolor;
+
+        }
+        function bg(){
+            var a = Math.floor(Math.random()*255)
+            var c = Math.floor(Math.random()*255)
+            var d = Math.floor(Math.random()*255)
+            var mycolor1="rgb("+a+","+c+","+d+")"
+            document.querySelector("#circle").style.background=mycolor1;
+        }
+    </script>
+</body>
+</html>

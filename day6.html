@@ -1,0 +1,53 @@
+<!-- Used animation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>Document</title>
+    <!--body class: the whole thing in the body tag will be applied to this -->
+    <style>
+        h1{
+            color:rgb(255, 255, 255);
+            font-family:'Times New Roman', Times, serif;
+            word-spacing: 50px;
+            line-height: 3; 
+            text-decoration:line-through overline underline;
+            text-indent: 100px;
+            text-transform:uppercase;
+            background-image:linear-gradient(90deg,violet,indigo,blue,green,yellow,orange,red);
+        } 
+        body{
+            background-image:url("https://i.pinimg.com/originals/d4/98/f5/d498f54a546cd21ac88a1be0d754fed4.jpg");
+            background-size:100% 100%;
+            background-attachment:fixed;
+        }
+        #mybox{
+            width:200px;
+            height:200px;
+            padding:20px;
+            border-radius:20px;
+            background-color:brown;
+            margin:20px;
+            animation-name: animation1;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            position:relative;
+        }
+        @keyframes animation1{
+            10%{background-color:rgb(209, 132, 127);left:0px;top:0px;}
+            25%{background-color:rgb(36, 22, 22);left:200px;top:0px;}
+            45%{background-color:rgb(10, 235, 239);left:200px;top:200px;}
+            75%{background-color:rgb(147, 10, 239);left:0px;top:200px;}
+            100%{background-color:rgb(212, 12, 99);left:0px;top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div align="left">
+        <h1>Introduction to CSS</h1>
+   
+    </div>
+    <div align="center" id="mybox">
+        <h2>Thank you</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+         #a{grid-area: a1;}
+        #b{grid-area: b2;
+            background-image: url("image.jpg");
+        }
+        #c{grid-area: c3;
+            background-color: darkmagenta;
+        }
+        #d{grid-area: d4;
+            background-color: darkslategray;
+        }
+        #e{grid-area: e5;
+            background-color: darkgrey;
+        }
+
+        #maindiv{
+            /*display:grid;
+            grid-template-areas: 'a1 a1 a1 a1 a1 a1'
+            'b2 b2 b2 c3 c3 c3' 
+            'd4 d4 d4 e5 e5 e5';*/
+            display:flex ;
+            flex-direction: row;
+            background-color: darkseagreen;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        div{
+            background-color: darkolivegreen;
+            font-size: 77px;
+            color: rgb(233, 245, 233);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+        #header{
+            top: 0px;
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            background-color: darkgoldenrod;
+            text-align: center;
+            text-decoration:underline ;
+            text-decoration-color: blanchedalmond;
+            font-size: 55px;
+            font-family: cursive;
+        }
+        body{
+            padding-top: 100px;
+
+        }
+        #footer{
+            bottom: 0px;
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            background-color: rgb(162, 19, 219);
+            text-align: center;
+            height:30px;
+            position:fixed;
+            text-decoration:underline ;
+            text-decoration-color: blanchedalmond;
+            font-size: 20px;
+            font-family: cursive; 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- grid box=> combinations of rows and columns -->
+    <div id="maindiv">
+        <div id="a">Content</div>
+        <div id="b">Images</div>
+        <div id="c">Audio</div>
+        <div id="d">Video</div>
+        <div id="e">Status</div>
+    </div>
+    <h1 id="header">WELCOME TO MY PAGE</h1>
+    <h4 id="footer">Thank you</h4>
+</body>
+</html>
